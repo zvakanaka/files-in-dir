@@ -1,0 +1,32 @@
+{
+  "name": "files-in-dir",
+  "version": "1.0.0",
+  "description": "Get file names within a directory",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/index.test.js",
+    "test:watch": "npm run test; date; chokidar './*.js' './test/*.js' -c 'if [ \"{event}\" = \"change\" ]; then npm run test; date; fi;'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvakanaka/files-in-dir.git"
+  },
+  "keywords": [
+    "file",
+    "directory",
+    "ls",
+    "extension"
+  ],
+  "author": "Adam Quinton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zvakanaka/files-in-dir/issues"
+  },
+  "homepage": "https://github.com/zvakanaka/files-in-dir#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.2"
+  }
+}
