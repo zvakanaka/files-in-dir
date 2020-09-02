@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/zvakanaka/files-in-dir#readme",
   "devDependencies": {
-    "chokidar-cli": "^1.2.2"
+    "chokidar-cli": "^2.1.0"
   }
 }
